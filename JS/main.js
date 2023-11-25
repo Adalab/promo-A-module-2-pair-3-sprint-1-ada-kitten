@@ -1,9 +1,17 @@
 "use strict";
 
 const menu = document.querySelector('.js_menu');
+const plus = document.querySelector('.js_plus');
+    
     menu.addEventListener( 'click' , (event) => {
-    const plus = document.querySelector('.js_plus');
-    plus.classList.remove('collapsed');  
+            
+        if (plus.classList.contains ('collapsed')) {
+        plus.classList.remove ('collapsed')
+        }
+        else {
+        plus.classList.remove ('collapsed')
+        }
+    
     });
 
 
